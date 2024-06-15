@@ -12,7 +12,7 @@ fn main() -> io::Result<()> {
     println!("Connected to the server!");
     
     let mut msg = sgcp::CommandRequest::default();
-    msg.component = sgcp::Component::Emg as i32;
+    msg.component = sgcp::Component::Telemetry as i32;
     msg.task_code = 1;
 
     let mut buf = Vec::new();
